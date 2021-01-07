@@ -18,7 +18,123 @@
   </head>
   <body>
     <div class="container">
-      <h1>My weather App</h1>
+      <div class="weather-app">
+        <h5>Weather Forecast</h5>
+
+        <div class="row">
+          <div class="col-4">
+            <form id="search-engine">
+              <input
+                type="text"
+                id="city-input"
+                placeholder="Enter a city"
+                autofocus="on"
+                class="form-control"
+              />
+            </form>
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+            />
+          </div>
+
+          <div class="col-1">
+            <input
+              type="button"
+              class="btn btn-primary btn-sm"
+              button
+              id="current-location-button"
+              value="Current Location"
+            />
+          </div>
+        </div>
+        <h1 id="city">Amsterdam</h1>
+
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li id="todays-time-date"><strong>Today | Sun 5/19</strong></li>
+              <li>
+                <span class="temperature" id="real-temperature">17°C </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <ul class="wind">
+              <li>Precipitation: 97%</li>
+              <li>Wind: 5km/h</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm">
+            <ul>
+              <li><strong>Mon</strong></li>
+              <li>5/20</li>
+              <li>
+                <i class="fas fa-cloud-showers-heavy"></i>
+              </li>
+              <li>10°</li>
+              <li>4°</li>
+            </ul>
+          </div>
+
+          <div class="col-sm">
+            <ul>
+              <li><strong>Tues</strong></li>
+              <li>5/21</li>
+              <li><i class="fas fa-cloud-sun-rain"></i></li>
+              <li>8°</li>
+              <li>2°</li>
+            </ul>
+          </div>
+
+          <div class="col-sm">
+            <ul>
+              <li><strong>Wed</strong></li>
+              <li>5/22</li>
+              <li><i class="fas fa-cloud-sun-rain"></i></li>
+              <li>10°</li>
+              <li>1°</li>
+            </ul>
+          </div>
+
+          <div class="col-sm">
+            <ul>
+              <li><strong>Thur</strong></li>
+              <li>5/23</li>
+              <li><i class="fas fa-sun"></i></li>
+              <li>6°</li>
+              <li>4°</li>
+            </ul>
+          </div>
+
+          <div class="col-sm">
+            <ul>
+              <li><strong>Fri</strong></li>
+              <li>5/23</li>
+              <li><i class="fas fa-sun"></i></li>
+              <li>10°</li>
+              <li>4°</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <small>
+        Coded by Prakriti Pathak and is
+        <a
+          href="https://github.com/prakritipathak/weather-final-project"
+          target="_blank"
+        >
+          open source code on GitHub
+        </a>
+        and hosted on Netlify
+      </small>
     </div>
     <script src="src/script.js"></script>
   </body>
