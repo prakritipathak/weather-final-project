@@ -18,113 +18,126 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h5>Weather Forecast</h5>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <h5>Weather Forecast</h5>
 
-        <div class="row">
-          <div class="col-4">
-            <form id="search-engine">
+          <div class="row">
+            <div class="col-4">
+              <form id="search-engine">
+                <input
+                  type="text"
+                  id="city-input"
+                  placeholder="Enter a city"
+                  autofocus="on"
+                  class="form-control"
+                />
+              </form>
+            </div>
+            <div class="col-3">
               <input
-                type="text"
-                id="city-input"
-                placeholder="Enter a city"
-                autofocus="on"
-                class="form-control"
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
               />
-            </form>
+            </div>
+
+            <div class="col-1">
+              <input
+                type="button"
+                class="btn btn-primary btn-sm"
+                button
+                id="current-location-button"
+                value="Current Location"
+              />
+            </div>
           </div>
-          <div class="col-3">
-            <input
-              type="submit"
-              value="Search"
-              class="form-control btn btn-primary shadow-sm"
-            />
+          <h1 id="city">Amsterdam</h1>
+
+          <div class="row">
+            <div class="col-7">
+              <div class="clearfix weather-temperature">
+                <ul>
+                  <li id="todays-time-date">
+                    <strong>Today | Sun 5/19</strong>
+                  </li>
+                  <li>
+                    <i class="fas fa-cloud-showers-heavy"> </i>
+
+                    <span class="temperature" id="temperature">17 </span>
+                    <span class="units">
+                      <a href="#" id="units-celcius">°C </a>|
+                      <a href="#" id="units-fahrenheit">°F </a>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <ul class="wind">
+                <li>Precipitation: 97%</li>
+                <li>Humidity: 73%</li>
+                <li>Wind: 5km/h</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-1">
-            <input
-              type="button"
-              class="btn btn-primary btn-sm"
-              button
-              id="current-location-button"
-              value="Current Location"
-            />
+          <div class="row">
+            <div class="col-sm">
+              <ul>
+                <li><strong>Mon</strong></li>
+                <li>5/20</li>
+                <li>
+                  <i class="fas fa-cloud-showers-heavy"></i>
+                </li>
+                <li>10°</li>
+                <li>4°</li>
+              </ul>
+            </div>
+
+            <div class="col-sm">
+              <ul>
+                <li><strong>Tues</strong></li>
+                <li>5/21</li>
+                <li><i class="fas fa-cloud-sun-rain"></i></li>
+                <li>8°</li>
+                <li>2°</li>
+              </ul>
+            </div>
+
+            <div class="col-sm">
+              <ul>
+                <li><strong>Wed</strong></li>
+                <li>5/22</li>
+                <li><i class="fas fa-cloud-sun-rain"></i></li>
+                <li>10°</li>
+                <li>1°</li>
+              </ul>
+            </div>
+
+            <div class="col-sm">
+              <ul>
+                <li><strong>Thur</strong></li>
+                <li>5/23</li>
+                <li><i class="fas fa-sun"></i></li>
+                <li>6°</li>
+                <li>4°</li>
+              </ul>
+            </div>
+
+            <div class="col-sm">
+              <ul>
+                <li><strong>Fri</strong></li>
+                <li>5/23</li>
+                <li><i class="fas fa-sun"></i></li>
+                <li>10°</li>
+                <li>4°</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <h1 id="city">Amsterdam</h1>
 
-        <div class="row">
-          <div class="col-6">
-            <ul>
-              <li id="todays-time-date"><strong>Today | Sun 5/19</strong></li>
-              <li>
-                <span class="temperature" id="real-temperature">17°C </span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-4">
-            <ul class="wind">
-              <li>Precipitation: 97%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 5km/h</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-sm">
-            <ul>
-              <li><strong>Mon</strong></li>
-              <li>5/20</li>
-              <li>
-                <i class="fas fa-cloud-showers-heavy"></i>
-              </li>
-              <li>10°</li>
-              <li>4°</li>
-            </ul>
-          </div>
-
-          <div class="col-sm">
-            <ul>
-              <li><strong>Tues</strong></li>
-              <li>5/21</li>
-              <li><i class="fas fa-cloud-sun-rain"></i></li>
-              <li>8°</li>
-              <li>2°</li>
-            </ul>
-          </div>
-
-          <div class="col-sm">
-            <ul>
-              <li><strong>Wed</strong></li>
-              <li>5/22</li>
-              <li><i class="fas fa-cloud-sun-rain"></i></li>
-              <li>10°</li>
-              <li>1°</li>
-            </ul>
-          </div>
-
-          <div class="col-sm">
-            <ul>
-              <li><strong>Thur</strong></li>
-              <li>5/23</li>
-              <li><i class="fas fa-sun"></i></li>
-              <li>6°</li>
-              <li>4°</li>
-            </ul>
-          </div>
-
-          <div class="col-sm">
-            <ul>
-              <li><strong>Fri</strong></li>
-              <li>5/23</li>
-              <li><i class="fas fa-sun"></i></li>
-              <li>10°</li>
-              <li>4°</li>
-            </ul>
-          </div>
-        </div>
         <small>
           <a
             href="https://github.com/prakritipathak/weather-final-project"
