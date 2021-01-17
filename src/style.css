@@ -5,8 +5,13 @@ body {
 h1 {
   color: #ff3366;
   font-weight: 900;
+  margin: 20px auto;
   text-align: center;
-  margin: 50px auto;
+}
+
+h6 {
+  color: rgba(49, 6, 85, 0.801);
+  text-align: center;
 }
 
 h5 {
@@ -26,10 +31,6 @@ li {
   color: rgba(36, 2, 37, 0.781);
 }
 
-p {
-  text-align: center;
-  font-weight: bolder;
-}
 .weather-app {
   max-width: 800px;
   border: 2px solid #ab47bc;
@@ -69,12 +70,16 @@ p {
   font-size: 60px;
   color: orangered;
 }
-.wind {
-  line-height: 16px;
+.weather-details {
+  line-height: 12px;
   margin-top: 30px;
   color: rgba(49, 6, 85, 0.801);
 }
 .units {
   position: relative;
   top: -32px;
+}
+
+.weather-temperature {
+  text-align: right;
 }

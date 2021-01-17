@@ -8,6 +8,7 @@
         let apiKey = "674e329bcdb1dff7f09baa41eea23436";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
         axios.get(apiUrl).then(showTemperature);
+    
       }
 
       let form = document.querySelector("#search-engine");
@@ -18,4 +19,7 @@
         console.log(response.data.main.temp);
         let temperatureElement = document.querySelector("#temperature");
         temperatureElement.innerHTML = Math.round(response.data.main.temp);
+    let iconElement = document.querySelector("icon");
+    iconElement.setAttribute()
+
       }
