@@ -12,11 +12,15 @@ h1 {
 h6 {
   color: darkslateblue;
   text-align: center;
-  margin: 0px auto;
   font-weight: 600;
   font-size: 16px;
 }
 
+p {
+  text-align: center;
+
+  color: #ff3366;
+}
 h5 {
   color: grey;
 }
