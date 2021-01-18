@@ -18,7 +18,6 @@ h6 {
 
 p {
   text-align: center;
-
   color: #ff3366;
 }
 h5 {
@@ -78,8 +77,8 @@ li {
   color: orangered;
 }
 .weather-details {
-  line-height: 12px;
-  margin-top: 30px;
+  line-height: 16px;
+  margin-top: 60px;
   color: rgba(49, 6, 85, 0.801);
 }
 .units {
