@@ -22,10 +22,9 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <h5>Weather Forecast</h5>
-
-          <div class="row">
-            <div class="col-5">
-              <form id="search-engine" class="mb-3">
+          <form id="search-engine" class="mb-3">
+            <div class="row">
+              <div class="col-5">
                 <input
                   type="text"
                   id="city-input"
@@ -34,16 +33,16 @@
                   class="form-control"
                   autocomplete="off"
                 />
-              </form>
+              </div>
+              <div class="col-4">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
             </div>
-            <div class="col-4">
-              <input
-                type="submit"
-                value="Search"
-                class="btn btn-primary w-100"
-              />
-            </div>
-          </div>
+          </form>
           <div class="col-1">
             <input
               type="button"
@@ -54,7 +53,7 @@
             />
           </div>
 
-          <h1 id="city">City</h1>
+          <h1 id="city"></h1>
           <h6>last updated: <span id="date"></span></h6>
           <p><span id="description"></span></p>
 

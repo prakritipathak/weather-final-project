@@ -5,7 +5,7 @@ body {
 h1 {
   color: #ff3366;
   font-weight: 900;
-  margin: 30px auto;
+  margin: 10px auto;
   text-align: center;
 }
 
@@ -18,7 +18,8 @@ h6 {
 
 p {
   text-align: center;
-  color: #ff3366;
+  color: rgb(136, 90, 90);
+  font-size: 20px;
 }
 h5 {
   color: grey;
