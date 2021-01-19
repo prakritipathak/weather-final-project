@@ -70,7 +70,7 @@
         let temperatureElement = document.querySelector("#temperature");
         temperatureElement.innerHTML = Math.round(response.data.main.temp);
         let iconElement = document.querySelector("#icon");
-    iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     let humidityElement = document.querySelector("#humidity");
     humidityElement.innerHTML = `${response.data.main.humidity}%`;
     let windElement = document.querySelector("#wind");
