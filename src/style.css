@@ -5,7 +5,6 @@ body {
 h1 {
   color: #f3e3ed;
   font-weight: 900;
-  font-size: 50px;
   margin-top: 50px;
   margin-bottom: 20px;
   text-align: center;
@@ -39,7 +38,7 @@ li {
 }
 
 img {
-  width: 100px;
+  width: 80px;
   margin-bottom: 10px;
 }
 .weather-app {
