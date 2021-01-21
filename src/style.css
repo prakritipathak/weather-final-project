@@ -1,43 +1,48 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
 }
 
 h1 {
-  color: #ff3366;
+  color: #f3e3ed;
   font-weight: 900;
-  margin: 10px auto;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 h6 {
-  color: darkslateblue;
+  color: #e0f5f7;
   text-align: center;
-  font-weight: 600;
   font-size: 16px;
 }
 
 p {
   text-align: center;
-  color: rgb(136, 90, 90);
-  font-size: 20px;
+  color: #d6b78e;
+  font-size: 22px;
 }
 h5 {
-  color: grey;
+  color: rgb(231, 225, 225);
 }
 
-strong {
+h2 {
   color: darkslateblue;
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
 }
 
 li {
   list-style: none;
   padding: 5px;
   font-size: 16px;
-  text-align: center;
   color: rgba(36, 2, 37, 0.781);
 }
 
+img {
+  width: 100px;
+  margin-bottom: 10px;
+}
 .weather-app {
   max-width: 800px;
   border: 2px solid #ab47bc;
@@ -46,9 +51,13 @@ li {
   border-radius: 20px;
   background-image: linear-gradient(
     to top,
-    #ff9a9e 0%,
-    #fecfef 99%,
-    #fecfef 100%
+    #4fb576 0%,
+    #44c489 30%,
+    #28a9ae 46%,
+    #28a2b7 59%,
+    #4c7788 71%,
+    #6c4f63 86%,
+    #432c39 100%
   );
 }
 .weather-app-wrapper {
@@ -57,36 +66,26 @@ li {
 }
 
 .temperature {
-  font-size: 30px;
+  font-size: 45px;
   position: relative;
   top: -22px;
-  margin-left: 10px;
-  color: rgba(36, 2, 37, 0.781);
+  margin-left: 20px;
+  color: rgba(47, 3, 58, 0.781);
+  font-weight: bolder;
 }
 
-.fa-cloud-showers-heavy {
-  font-size: 60px;
-  color: rgb(55, 77, 163);
-}
-
-.fa-cloud-sun-rain {
-  font-size: 60px;
-  color: rgb(158, 140, 52);
-}
-.fa-sun {
-  font-size: 60px;
-  color: orangered;
-}
 .weather-details {
   line-height: 16px;
-  margin-top: 60px;
-  color: rgba(49, 6, 85, 0.801);
+  margin-top: 50px;
 }
 .units {
   position: relative;
-  top: -32px;
+  top: -46px;
+  color: rgb(231, 225, 225);
+  font-size: 18px;
 }
-
 .weather-temperature {
   text-align: right;
+  margin-bottom: 40px;
+  margin-right: 20px;
 }

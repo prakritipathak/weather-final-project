@@ -43,15 +43,6 @@
               </div>
             </div>
           </form>
-          <div class="col-1">
-            <input
-              type="button"
-              class="btn btn-primary btn-sm"
-              button
-              id="current-location-button"
-              value="Current Location"
-            />
-          </div>
 
           <h1 id="city"></h1>
           <h6>last updated: <span id="date"></span></h6>
@@ -67,15 +58,15 @@
                 />
                 <div class="float-left">
                   <span class="temperature" id="temperature"> </span>
-                  <span class="units">
-                    <a href="#" id="units-celcius">°C </a>|
+                  <span class="units"
+                    >°C |
                     <a href="#" id="units-fahrenheit">°F </a>
                   </span>
                 </div>
               </div>
             </div>
 
-            <div class="col-4">
+            <div class="col-3">
               <ul class="weather-details">
                 <li>Humidity: <span id="humidity"></span></li>
                 <li>Wind: <span id="wind"></span></li>
@@ -83,61 +74,8 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-sm">
-              <ul>
-                <li><strong>Mon</strong></li>
-                <li>5/20</li>
-                <li>
-                  <i class="fas fa-cloud-showers-heavy"></i>
-                </li>
-                <li>10°</li>
-                <li>4°</li>
-              </ul>
-            </div>
-
-            <div class="col-sm">
-              <ul>
-                <li><strong>Tues</strong></li>
-                <li>5/21</li>
-                <li><i class="fas fa-cloud-sun-rain"></i></li>
-                <li>8°</li>
-                <li>2°</li>
-              </ul>
-            </div>
-
-            <div class="col-sm">
-              <ul>
-                <li><strong>Wed</strong></li>
-                <li>5/22</li>
-                <li><i class="fas fa-cloud-sun-rain"></i></li>
-                <li>10°</li>
-                <li>1°</li>
-              </ul>
-            </div>
-
-            <div class="col-sm">
-              <ul>
-                <li><strong>Thur</strong></li>
-                <li>5/23</li>
-                <li><i class="fas fa-sun"></i></li>
-                <li>6°</li>
-                <li>4°</li>
-              </ul>
-            </div>
-
-            <div class="col-sm">
-              <ul>
-                <li><strong>Fri</strong></li>
-                <li>5/23</li>
-                <li><i class="fas fa-sun"></i></li>
-                <li>10°</li>
-                <li>4°</li>
-              </ul>
-            </div>
-          </div>
+          <div class="row weather-forecast" id="forecast"></div>
         </div>
-
         <small>
           <a
             href="https://github.com/prakritipathak/weather-final-project"
