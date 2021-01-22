@@ -10,6 +10,16 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color: darkslateblue;
+  font-size: 18px;
+  text-align: center;
+}
+
+h5 {
+  color: rgb(231, 225, 225);
+}
+
 h6 {
   color: #e0f5f7;
   text-align: center;
@@ -20,15 +30,6 @@ p {
   text-align: center;
   color: #d6b78e;
   font-size: 22px;
-}
-h5 {
-  color: rgb(231, 225, 225);
-}
-
-h2 {
-  color: darkslateblue;
-  font-size: 18px;
-  text-align: center;
 }
 
 li {

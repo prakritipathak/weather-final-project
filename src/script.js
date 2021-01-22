@@ -69,7 +69,9 @@ let now = new Date(timestamp);
   let descriptionElement = document.querySelector("#description");
   let dateElement = document.querySelector("#date");
 
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+   celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
  iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   humidityElement.innerHTML = `${response.data.main.humidity}%`;
@@ -122,9 +124,33 @@ for (let index = 0; index < 6; index++) {
           search(cityInput.value);
       }
 
-      let form = document.querySelector("#search-engine");
+
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
+let form = document.querySelector("#search-engine");
       form.addEventListener("submit", handleSubmit);
 
+      let fahrenheitUnit = document.querySelector("#units-fahrenheit");
+      fahrenheitUnit.addEventListener("click", showFahrenheitTemperature);
+
+
+      let celsiusUnit = document.querySelector("#units-celsius");
+      celsiusUnit.addEventListener("click", showCelsiusTemperature);
+
+      
       search("Delft");
      
   
