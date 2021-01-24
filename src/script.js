@@ -128,6 +128,8 @@ for (let index = 0; index < 6; index++) {
 function showFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+  celsiusUnit.classList.remove("active");
+  fahrenheitUnit.classList.add("active");
    let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
@@ -135,6 +137,8 @@ function showFahrenheitTemperature(event) {
 function showCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+   fahrenheitUnit.classList.remove("active");
+  celsiusUnit.classList.add("active");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 

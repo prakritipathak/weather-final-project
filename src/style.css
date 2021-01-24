@@ -88,3 +88,17 @@ img {
   margin-bottom: 40px;
   margin-right: 20px;
 }
+
+.weather-temperature .unitsfah {
+  text-decoration: none;
+}
+
+.weather-temperature .active {
+  color: rgba(47, 3, 58, 0.781);
+  cursor: default;
+  text-decoration: none;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
